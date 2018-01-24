@@ -307,24 +307,24 @@ span {
 }
 
 .x-axis {
-	background-color: #fff;
+	background-color: none;
 }
 
 .y-axis {
 	z-index: 1;
-	padding: 0 1em 22px 0; /* padding-right could be lower in lower res */
+	padding: 0 1em 0px 0; /* padding-right could be lower in lower res */
 	background-color: #fff;
 	vertical-align: top; /* for table-cell */
-	line-height: 44px;
+	line-height: 42px;
 	text-align: right;
 	font-size: 0.8em;
 	width: 3em;
 }
 
-.weekend {
+/*.weekend {
 	background-color: #eef;
 }
-
+*/
 .day {
 	float: left;
 	text-align: center;
@@ -347,7 +347,11 @@ span {
 }
 
 .time label {
-	height: 22px;
+	height: 20px;
+}
+
+.time {
+	margin: 0px 1px 1px 0px;
 }
 
 .interest {
@@ -381,4 +385,394 @@ span {
 
 .box-title {
 	font-size: 1.5em;
+}
+
+
+/*---------------table div colors--------------*/
+/*---------------weekday colors--------------*/
+
+.a0 {
+	background-color: #ccc;
+}
+
+.a1 {
+	background-color: #ccc;
+}
+
+.a2 {
+	background-color: #ccc;
+}
+
+.a3 {
+	background-color: #ccc;
+}
+
+.a4 {
+	background-color: #ccc;
+}
+
+.a5 {
+	background-color: #ccc;
+}
+
+.a6 {
+	background-color: #ccc;
+}
+
+.a7 {
+	background-color: #ccc;
+}
+
+.a8 {
+	background-color: #ccc;
+}
+
+.a9 {
+	background-color: #ccc;
+}
+
+.a10 {
+	background-color: #ccc;
+}
+
+.a11 {
+	background-color: #ccc;
+}
+
+.a12 {
+	background-color: #ccc;
+}
+
+.a13 {
+	background-color: #ccc;
+}
+
+.a14 {
+	background-color: #ccc;
+}
+
+.a15 {
+	background-color: #ccc;
+}
+
+.a16 {
+	background-color: #ccc;
+}
+
+.a17 {
+	background-color: #ccc;
+}
+
+.a18 {
+	background-color: #ccc;
+}
+
+.a19 {
+	background-color: #ccc;
+}
+
+.a20 {
+	background-color: #ccc;
+}
+
+.a21 {
+	background-color: #ccc;
+}
+
+.a22 {
+	background-color: #ccc;
+}
+
+.a23 {
+	background-color: #ccc;
+}
+
+.a24 {
+	background-color: #ccc;
+}
+
+.a25 {
+	background-color: #ccc;
+}
+
+.a26 {
+	background-color: #ccc;
+}
+
+.a27 {
+	background-color: #ccc;
+}
+
+.a28 {
+	background-color: #ccc;
+}
+
+.a29 {
+	background-color: #ccc;
+}
+
+.a30 {
+	background-color: #ccc;
+}
+
+.a31 {
+	background-color: #ccc;
+}
+
+.a32 {
+	background-color: #ccc;
+}
+
+.a33 {
+	background-color: #ccc;
+}
+
+.a34 {
+	background-color: #ccc;
+}
+
+.a35 {
+	background-color: #ccc;
+}
+
+.a36 {
+	background-color: #ccc;
+}
+
+.a37 {
+	background-color: #ccc;
+}
+
+.a38 {
+	background-color: #ccc;
+}
+
+.a39 {
+	background-color: #ccc;
+}
+
+.a40 {
+	background-color: #ccc;
+}
+
+.a41 {
+	background-color: #ccc;
+}
+
+.a42 {
+	background-color: #ccc;
+}
+
+.a43 {
+	background-color: #ccc;
+}
+
+.a44 {
+	background-color: #ccc;
+}
+
+.a45 {
+	background-color: #ccc;
+}
+
+.a46 {
+	background-color: #ccc;
+}
+
+.a47 {
+	background-color: #ccc;
+}
+
+/*-----------weekend colors below-------------*/
+
+.b0 {
+	background-color: #ccc;
+}
+
+.b1 {
+	background-color: #ccc;
+}
+
+.b2 {
+	background-color: #ccc;
+}
+
+.b3 {
+	background-color: #ccc;
+}
+
+.b4 {
+	background-color: #ccc;
+}
+
+.b5 {
+	background-color: #ccc;
+}
+
+.b6 {
+	background-color: #ccc;
+}
+
+.b7 {
+	background-color: #ccc;
+}
+
+.b8 {
+	background-color: #ccc;
+}
+
+.b9 {
+	background-color: #ccc;
+}
+
+.b10 {
+	background-color: #ccc;
+}
+
+.b11 {
+	background-color: #ccc;
+}
+
+.b12 {
+	background-color: #ccc;
+}
+
+.b13 {
+	background-color: #ccc;
+}
+
+.b14 {
+	background-color: #ccc;
+}
+
+.b15 {
+	background-color: #ccc;
+}
+
+.b16 {
+	background-color: #ccc;
+}
+
+.b17 {
+	background-color: #ccc;
+}
+
+.b18 {
+	background-color: #ccc;
+}
+
+.b19 {
+	background-color: #ccc;
+}
+
+.b20 {
+	background-color: #ccc;
+}
+
+.b21 {
+	background-color: #ccc;
+}
+
+.b22 {
+	background-color: #ccc;
+}
+
+.b23 {
+	background-color: #ccc;
+}
+
+.b24 {
+	background-color: #ccc;
+}
+
+.b25 {
+	background-color: #ccc;
+}
+
+.b26 {
+	background-color: #ccc;
+}
+
+.b27 {
+	background-color: #ccc;
+}
+
+.b28 {
+	background-color: #ccc;
+}
+
+.b29 {
+	background-color: #ccc;
+}
+
+.b30 {
+	background-color: #ccc;
+}
+
+.b31 {
+	background-color: #ccc;
+}
+
+.b32 {
+	background-color: #ccc;
+}
+
+.b33 {
+	background-color: #ccc;
+}
+
+.b34 {
+	background-color: #ccc;
+}
+
+.b35 {
+	background-color: #ccc;
+}
+
+.b36 {
+	background-color: #ccc;
+}
+
+.b37 {
+	background-color: #ccc;
+}
+
+.b38 {
+	background-color: #ccc;
+}
+
+.b39 {
+	background-color: #ccc;
+}
+
+.b40 {
+	background-color: #ccc;
+}
+
+.b41 {
+	background-color: #ccc;
+}
+
+.b42 {
+	background-color: #ccc;
+}
+
+.b43 {
+	background-color: #ccc;
+}
+
+.b44 {
+	background-color: #ccc;
+}
+
+.b45 {
+	background-color: #ccc;
+}
+
+.b46 {
+	background-color: #ccc;
+}
+
+.b47 {
+	background-color: #ccc;
 }
