@@ -5,7 +5,7 @@ function mobileScreen(evt) {
     if (evt.matches) {
 
         console.log("less than 960px");
-        alert("It's an alert!");
+        // alert("It's an alert!");
         
         
         // the width of browser is more then 960px
