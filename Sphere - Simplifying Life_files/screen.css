@@ -219,6 +219,11 @@ span {
 	border-bottom: white 0px solid;
 }
 
+#menu li a:active {
+	background-color: #6a1a76;
+	border-bottom: white 0px solid;
+}
+
 .show-menu {
 	font-size: 0;
 	text-decoration: none;
