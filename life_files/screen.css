@@ -57,6 +57,10 @@
 		visibility: visible !important;
 	}
 
+	#burger {
+		visibility: visible !important;
+	}
+
 	#left, #right, .padding {
 		width: 7vw;
 		min-width: 40px;
@@ -80,6 +84,10 @@
 	}
 
 	#logo2 {
+		display: none !important;
+	}
+
+	#burger {
 		display: none !important;
 	}
 
@@ -178,6 +186,7 @@ ul {
 a {
 	text-decoration: none;
 	color: #6a1a76;
+	transition: color 0.3s ease;
 }
 
 a:hover {
@@ -450,7 +459,7 @@ span {
 
 .show-menu {
 	display: block;
-	position: relative;
+	/*position: relative;*/
 	z-index: 1;
 	-webkit-user-select: none;
 	user-select: none;
@@ -531,14 +540,14 @@ span {
  * Make this absolute positioned
  * at the top left of the screen
  */
-/*#menu
+#menu
 	{
 		position: absolute;
-		background: #ededed;
+		/*background: #ededed;*/
 		list-style-type: none;
 		-webkit-font-smoothing: antialiased;
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	}*/
+	}
 
 
 /*
