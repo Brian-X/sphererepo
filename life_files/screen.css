@@ -44,10 +44,19 @@
 		visibility: visible;
 		position: fixed;
 		background-color: #7a796a;
-		margin: 26px 0 0 0;
+		/*margin: 26px 0 0 0;*/
 		padding: 25px 25px 25px 25px;
 		line-height: 1.5em;
 	}
+
+	#logo {
+		display: none !important;
+	}
+
+	#logo2 {
+		visibility: visible !important;
+	}
+
 	#left, #right, .padding {
 		width: 7vw;
 		min-width: 40px;
@@ -65,6 +74,15 @@
 	#menu li {
 		display: inline-block;
 	}
+
+	#logo {
+		visibility: visible !important;
+	}
+
+	#logo2 {
+		display: none !important;
+	}
+
 	.show-menu, .show-menu2 {
 		position: absolute;
 		visibility: hidden;
@@ -163,7 +181,7 @@ a {
 }
 
 a:hover {
-	border-bottom: 1px solid;
+	/*border-bottom: 1px solid;*/
 }
 
 p {
@@ -189,17 +207,28 @@ span {
 	vertical-align: middle;
 }
 
+#logo2 {
+	float: left;
+	/*margin-top: 7px;  needs changing: should be vertical aligned instead */
+	/*margin-right: 3%;  why needed with #top padding? */
+	background: url(./images/logo.png) center no-repeat;
+	background-size: 170px 64px;
+	height: 64px;
+	width: 170px;
+	vertical-align: middle;
+}
+
 #top {
 	float: left;
 	margin-top: 0px; /* needs changing: should be vertical aligned instead */
-	padding: 0 3%;
+	padding: 0 2%;
 	height: 64px;
 }
 
 #top-right {
 	float: right;
 	margin-top: 0px; /* needs changing: should be vertical aligned instead */
-	padding: 0 3%;
+	padding: 0 2%;
 	height: 64px;
 }
 
@@ -218,25 +247,25 @@ span {
 	text-transform: capitalize;
 	line-height: 0px;
 	height: 0px;
-	padding: 32px 20px;
+	padding: 32px 17px;
 }
 
 #menu li a:hover {
 	background-color: rgba(106, 26, 118, 0.7);
-	border-bottom: white 0px solid; /*should be deleted, but it still shows up*/
+	/*border-bottom: white 0px solid;*/ 
 }
 
 .active {
 	background-color: rgba(106, 26, 118, 1);
-	border-bottom: white 0px solid; 
+	/*border-bottom: white 0px solid; */
 }
 
 .show-menu {
 	font-size: 0;
 	text-decoration: none;
 	cursor: pointer;
-	background: url(./images/arrow.png) no-repeat 15px 23px #6a1a76;
-	padding: 30px;
+	background: /*url(./images/arrow.png) no-repeat 15px 23px*/ #6a1a76;
+	padding: 32px;
 } /* needs changing: shouldn't be space on the left */
 
 
@@ -417,6 +446,107 @@ span {
 	font-size: 1.5em;
 }
 
+/*---------------hamburger menu---------------*/
+
+.show-menu {
+	display: block;
+	position: relative;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.show-menu input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	  
+	cursor: pointer;
+	  
+	opacity: 0; /* hide this */
+	z-index: 2; /* and place it over the hamburger */
+	  
+	-webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+.show-menu span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	  
+	background: #cdcdcd;
+	border-radius: 3px;
+	  
+	z-index: 1;
+	  
+	transform-origin: 4px 0px;
+	  
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	    opacity 0.55s ease;
+}
+
+.show-menu span:first-child {
+	transform-origin: 0% 0%;
+}
+
+.show-menu span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+ 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ 
+.show-menu input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+.show-menu input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+.show-menu input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+/*#menu
+	{
+		position: absolute;
+		background: #ededed;
+		list-style-type: none;
+		-webkit-font-smoothing: antialiased;
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}*/
+
+
+/*
+ * And let's slide it in from the left
+ */
+.show-menu input:checked ~ ul {
+	transform: none;
+}
 
 /*---------------table div colors--------------*/
 /*---------------weekday colors--------------*/
