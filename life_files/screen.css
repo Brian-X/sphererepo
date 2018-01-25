@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans');
+
 @media (max-width: 479px) {
 	#portrait {
 		text-align: center;
@@ -41,9 +43,9 @@
 	input[type=checkbox]:checked ~ #menu {
 		visibility: visible;
 		position: fixed;
-		background-color: #ccc;
+		background-color: #7a796a;
 		margin: 26px 0 0 0;
-		padding: 25px 25px 25px 10px;
+		padding: 25px 25px 25px 25px;
 		line-height: 1.5em;
 	}
 	#left, #right, .padding {
@@ -92,7 +94,7 @@
 
 html, body {
 	margin: 0;
-	font: 100% Helvetica, 'Open Sans', Arial, sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	/*color: #555;*/
 	height: 100%;
 }
@@ -209,9 +211,9 @@ span {
 
 #menu li a {
 	display: block;
-	color: white;
+	color: #e6e6e2;
 	text-align: center;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 400;
 	text-transform: capitalize;
 	line-height: 0px;
@@ -244,7 +246,7 @@ span {
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
 	text-align: center;
-	color: #fff;
+	color: #e6e6e2;
 	height: 30px;
 	width: 30px;
 }
