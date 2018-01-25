@@ -515,7 +515,7 @@ span {
 #menuToggle input:checked ~ span {
 	opacity: 1;
 	transform: rotate(45deg) translate(-2px, -1px);
-	background: #232323;
+	/*background: #232323;*/
 }
 
 /* middle bar */
