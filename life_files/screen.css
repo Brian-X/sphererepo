@@ -93,8 +93,13 @@
 html, body {
 	margin: 0;
 	font: 100% Helvetica, 'Open Sans', Arial, sans-serif;
-	color: #555;
+	/*color: #555;*/
 	height: 100%;
+}
+
+body {
+	background-image: url("./images/parchment-texture.jpg");
+    background-repeat: repeat;
 }
 
 header {
@@ -216,12 +221,12 @@ span {
 
 #menu li a:hover {
 	background-color: #6a1a76;
-	border-bottom: white 0px solid;
+	border-bottom: white 0px solid; /*should be deleted, but it still shows up*/
 }
 
-#menu li a:active {
+.active {
 	background-color: #6a1a76;
-	border-bottom: white 0px solid;
+	border-bottom: white 0px solid; 
 }
 
 .show-menu {
@@ -278,7 +283,7 @@ span {
 #left, #right {
 	position: fixed;
 	z-index: 2;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	text-align: center;
 	height: 100%;
 }
@@ -337,7 +342,6 @@ span {
 .y-axis {
 	z-index: 1;
 	padding: 0 1em 0px 0; /* padding-right could be lower in lower res */
-	background-color: #fff;
 	vertical-align: top; /* for table-cell */
 	line-height: 42px;
 	text-align: right;
